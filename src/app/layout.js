@@ -1,10 +1,10 @@
 /* eslint-disable new-cap */
-/* eslint-disable camelcase */
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Lora } from "next/font/google";
+// eslint-disable-next-line camelcase
 import { Libre_Bodoni } from "next/font/google";
 
 const lora = Lora({ subsets: ["latin"] });
