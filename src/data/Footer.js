@@ -2,7 +2,7 @@ import {
   FaInstagram,
   FaEnvelope,
   FaSquareFacebook,
-  FaLinkedin,
+  FaLinkedinIn,
 } from "react-icons/fa6";
 
 export const links = [
@@ -22,7 +22,7 @@ export const links = [
   },
 
   {
-    icon: <FaLinkedin />,
+    icon: <FaLinkedinIn />,
     link: "https://www.linkedin.com/",
   },
 ];
