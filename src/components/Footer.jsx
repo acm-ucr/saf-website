@@ -1,37 +1,26 @@
 import React from "react";
-import {
-  FaInstagram,
-  FaEnvelope,
-  FaSquareFacebook,
-  FaLinkedin,
-} from "react-icons/fa6";
-import Image from "next/image";
-import safLogo from "../app/saf-logo.webp";
+import { links } from "../data/Footer";
 import Link from "next/link";
+import Image from "next/image";
+import redLogo from "../../public/svg/red-logo.svg";
 
 const Footer = () => {
   return (
     <div class="py-3 px-3 flex items-center justify-between bg-saf-beige-200">
       <div>
-        <Image alt="saf-logo" style={{ width: "12%" }} src={safLogo} />
+        <Image alt="saf-logo" class="w-12" src={redLogo} />
       </div>
 
-      <div class="flex gap-4">
-        <Link href="https://www.instagram.com/">
-          <FaInstagram className="size-10 text-saf-red instagram-icon" />
-        </Link>
-
-        <Link href="https://www.google.com/">
-          <FaEnvelope className="size-10 text-saf-red email-icon" />
-        </Link>
-
-        <Link href="https://www.facebook.com/">
-          <FaSquareFacebook className="size-10 text-saf-red facebook-icon" />
-        </Link>
-
-        <Link href="https://www.linkedin.com/">
-          <FaLinkedin className="size-10 text-saf-red linkedin-icon" />
-        </Link>
+      <div class="flex gap-4 mr-3">
+        {links.map((link, index) => (
+          <Link
+            key={index}
+            href={link.link}
+            className="text-saf-red hover:-translate-y-0.5 duration-300 text-4xl"
+          >
+            {link.icon}
+          </Link>
+        ))}
       </div>
     </div>
   );
