@@ -6,12 +6,12 @@ import redLogo from "../../public/svg/red-logo.svg";
 
 const Footer = () => {
   return (
-    <div class="py-3 px-3 flex items-center justify-between bg-saf-beige-200">
+    <div className="py-3 px-3 flex items-center justify-between bg-saf-beige-200">
       <div>
-        <Image alt="saf-logo" class="w-12" src={redLogo} />
+        <Image alt="saf-logo" className="w-12" src={redLogo} />
       </div>
 
-      <div class="flex gap-4 mr-3">
+      <div className="flex gap-4 mr-3">
         {links.map((link, index) => (
           <Link
             key={index}
