@@ -2,7 +2,7 @@ import Landing from "@/components/home/Landing";
 import SAF from "@/components/home/SAF";
 import PhotoStrip from "@/components/home/PhotoStrip";
 import WhyJoin from "@/components/home/WhyJoin";
-import Circles from "@/components/home/get-invloved/Circles";
+import GetInvolved from "@/components/home/get-invloved/GetInvolved";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <PhotoStrip />
       <WhyJoin />
       <PhotoStrip />
-      <Circles />
+      <GetInvolved />
     </div>
   );
 };
