@@ -1,4 +1,4 @@
-name: SAF UCR Website
+name: ACM UCR Website
 on:
   pull_request:
     branches: [main, dev]
