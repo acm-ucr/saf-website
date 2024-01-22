@@ -6,7 +6,6 @@ const WhyJoin = () => {
   return (
     <div className="w-full flex flex-row items-center justify-center bg-orange-50 px-14 py-14">
       <div className="relative flex flex-col w-1/2 px-10 py-10 pe-8 bg-saf-beige-200">
-        {/* Overlay Image */}
         <div className="absolute top-0 left-1/2 w-3/4 h-full z-0">
           <Image
             src={Ripple}
@@ -16,8 +15,6 @@ const WhyJoin = () => {
             className="filter brightness-150"
           />
         </div>
-
-        {/* Text Content */}
         <div className="z-10 relative">
           <p className="ml-7 text-4xl font-bold font-libre text-white mt-20">
             Why Join SAF
