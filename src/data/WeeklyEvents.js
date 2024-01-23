@@ -11,7 +11,7 @@ export const events = [
   },
   {
     id: 3,
-    description: "chai talk ; Stigma Against the LGBTQ+ in SA Community",
+    description: "chai talk : Stigma Against the LGBTQ+ in SA Community",
     day: "24",
   },
   {
