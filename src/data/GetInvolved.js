@@ -1,21 +1,21 @@
 import {
   FaDiscord,
-  FaInstagram,
   FaSquareFacebook,
   FaEnvelope,
   FaYoutube,
 } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
 
 export const links = [
   {
-    text: "Disocrd",
+    text: "Discord",
     icon: <FaDiscord />,
     link: "https://discord.gg/vwcgqrJ3",
   },
 
   {
     text: "Instagram",
-    icon: <FaInstagram />,
+    icon: <RiInstagramFill />,
     link: "https://www.instagram.com/",
   },
 
