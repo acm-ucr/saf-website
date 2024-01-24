@@ -8,7 +8,7 @@ import {
 
 export const links = [
   {
-    text: "Disocrd",
+    text: "Discord",
     icon: <FaDiscord />,
     link: "https://discord.gg/vwcgqrJ3",
   },
