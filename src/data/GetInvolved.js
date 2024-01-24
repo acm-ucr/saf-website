@@ -1,10 +1,10 @@
 import {
   FaDiscord,
-  FaInstagram,
   FaSquareFacebook,
   FaEnvelope,
   FaYoutube,
 } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
 
 export const links = [
   {
@@ -15,7 +15,7 @@ export const links = [
 
   {
     text: "Instagram",
-    icon: <FaInstagram />,
+    icon: <RiInstagramFill />,
     link: "https://www.instagram.com/",
   },
 

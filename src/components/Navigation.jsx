@@ -26,7 +26,7 @@ const Navigation = () => {
           href="/"
           onClick={() => setSelected("")}
         >
-          <Image src={WhiteLogo} className="m-0 p-0 w-20" alt="saf-logo" />
+          <Image src={WhiteLogo} className=" w-16 my-2 ml-1" alt="saf-logo" />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle
