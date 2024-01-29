@@ -5,12 +5,16 @@ import Link from "next/link";
 const SAF = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center py-5 bg-saf-red gap-3">
-      <Image src={whiteLogo} alt="SAF Logo" className="w-1/12" />
-      <p className=" text-white text-center text-3xl font-libre font-bold font-serif">
+      <Image
+        src={whiteLogo}
+        alt="SAF Logo"
+        className="sm:w-1/4 w-1/4 md:w-1/12 lg:w-1/12"
+      />
+      <p className=" text-white text-center sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold font-serif">
         {" "}
         Who We Are
       </p>
-      <p className=" text-white text-center text-xl font-libre font-serif h-1/2 w-5/6">
+      <p className=" text-white text-center sm:text-sm md:text-base lg:text-xl font-libre font-serif h-1/2 w-5/6">
         {" "}
         SAF, at UC Riverside, is Riverside’s South Asian Club. We aim to serve
         as the umbrella for all organizations that identify as South Asian. We
@@ -22,7 +26,7 @@ const SAF = () => {
       </p>
       <Link
         href="/"
-        className="border-1 border-white w-1/6 text-center no-underline text-white px-3 py-3 text-lg font-libre font-bold font-serif"
+        className="min-w-[10rem] border-1 border-white w-1/6 text-center no-underline text-white px-3 py-3 sm:text-sm md:text-base lg:text-lg font-libre font-bold font-serif"
       >
         Learn More
       </Link>
