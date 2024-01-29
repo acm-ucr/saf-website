@@ -14,8 +14,8 @@ const WhyJoin = () => {
           experience!
         </p>
       </div>
-      <div className="hidden sm:block">
-        <div className="flex flex-col justify-center items-center w-1/4">
+      <div className="hidden sm:block w-1/4">
+        <div className="flex flex-col justify-center items-center w-full">
           <ul className="flex flex-col list-disc list-outside">
             <li className="mt-3 font-libre leading-10 text-xl">
               Cultural Appreciation
