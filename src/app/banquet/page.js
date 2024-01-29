@@ -2,6 +2,7 @@ import React from "react";
 import Title from "@/components/Title";
 import Description from "@/components/Description";
 import Image from "next/image";
+import image4 from "@/public/images/image4.webp";
 
 const page = () => {
   return (
@@ -13,14 +14,10 @@ const page = () => {
           "Banquet is our end of the year celebration! It is a time for all of us to gather together and look back at the wonderful year we have had together."
         }
       />
-      <div className="flex justify-center items-center w-full h-60">
-        <Image
-          src="/images/image4.webp"
-          width={500}
-          height={300}
-          objectFit="cover"
-          alt="banquet"
-        />
+      <div className="flex justify-center items-center w-full">
+        <div className="w-2/3 h-96 relative">
+          <Image src={image4} layout="fill" objectFit="contain" alt="banquet" />
+        </div>
       </div>
       <div className="flex flex-col w-5/6 gap-2">
         <p className="text-xl">
