@@ -14,11 +14,7 @@ const page = () => {
           "Banquet is our end of the year celebration! It is a time for all of us to gather together and look back at the wonderful year we have had together."
         }
       />
-      <div className="flex justify-center items-center w-full">
-        <div className="w-2/3 h-96 relative">
-          <Image src={image4} layout="fill" objectFit="contain" alt="banquet" />
-        </div>
-      </div>
+      <Image src={image4} className="w-1/3" alt="banquet" />
       <div className="flex flex-col w-5/6 gap-2">
         <p className="text-xl">
           {
