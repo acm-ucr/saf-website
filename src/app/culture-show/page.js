@@ -7,7 +7,7 @@ import PhotoBar1 from "../../../public/images/ImageBar1.webp";
 const page = () => {
   return (
     <div className="w-full overflow-clip flex flex-col justify-center items-center gap-10">
-     <Title />
+      <Title />
       <Description
         title={"What is Culture Show"}
         text={
