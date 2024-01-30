@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${lora.variable} ${libre.variable}`}>
         <Navigation />
-        <div className="w-full flex flex-col bg-saf-beige-100 items-center justify-center mt-16 md:mt-[8vh]">
+        <div className="w-full flex flex-col bg-saf-beige-100 items-center justify-center">
           {children}
         </div>
         <Footer />
