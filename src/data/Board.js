@@ -3,32 +3,32 @@ import placeholderBoard from "../../public/images/placeholder_board.webp";
 export const board = [
   {
     image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    name: "Robin Abeyratne",
+    position: "Coordinator",
   },
   {
     image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    name: "Riti Desai",
+    position: "Representative",
   },
   {
     image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    name: "Kishan Patel",
+    position: "Representative",
   },
   {
     image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    name: "Chinmayi",
+    position: "Co-President",
   },
   {
     image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    name: "Zuha Hayat",
+    position: "Director",
   },
   {
     image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    name: "Ayesha Perrera",
+    position: "Public Relations",
   },
 ];
