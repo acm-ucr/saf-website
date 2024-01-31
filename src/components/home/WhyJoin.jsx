@@ -8,7 +8,7 @@ const WhyJoin = () => {
       <div className="flex flex-col w-4/5 relative overflow-clip sm:w-2/3 px-4 py-2 sm:px-10 sm:py-10 pe-2 sm:pe-8 bg-saf-beige-200">
         <Image
           src={Ripple}
-          className="w-1/2 absolute -right-[10%] -top-[20%]"
+          className="w-1/2 absolute -right-[10%] -top-[20%] "
           alt={"ripple asset svg"}
         />
         <p className="ml-3 sm:ml-8 text-2xl sm:text-4xl font-bold font-libre text-white mt-20">
