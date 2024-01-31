@@ -5,7 +5,7 @@ import Boards from "@/components/board/Boards";
 const page = () => {
   return (
     <div className="w-full overflow-clip flex flex-col justify-center items-center gap-10">
-      <Title />
+      <Title text={"Board"} />
       <Boards />
     </div>
   );
