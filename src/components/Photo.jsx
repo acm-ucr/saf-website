@@ -5,12 +5,16 @@ import mandala from "../../public/svg/mandala.svg";
 
 const Photo = () => {
   return (
-    <div className="flex relative justify-center items-center w-1/2">
-      <Image src={mandala} className="absolute z-1 -left-[-7%]" alt="mandala" />
-      <Image src={image1} className="w-2/3 z-2" alt="group photo" />
+    <div className="flex relative justify-center items-center">
       <Image
         src={mandala}
-        className="absolute z-1 -right-[-7%]"
+        className="max-sm:hidden w-1/3 absolute z-1 -left-[-1%]"
+        alt="mandala"
+      />
+      <Image src={image1} className="w-3/4 z-2" alt="group photo" />
+      <Image
+        src={mandala}
+        className="max-sm:hidden w-1/3 absolute z-1 -right-[-1%]"
         alt="mandala"
       />
     </div>

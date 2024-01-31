@@ -26,7 +26,7 @@ const Navigation = () => {
           href="/"
           onClick={() => setSelected("")}
         >
-          <Image src={WhiteLogo} className="m-0 p-0 w-20" alt="saf-logo" />
+          <Image src={WhiteLogo} className=" w-16 my-2 ml-1" alt="saf-logo" />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle
@@ -36,7 +36,7 @@ const Navigation = () => {
         <FaBars className=" text-saf-beige-100 text-xl" />
       </Navbar.Toggle>
       <Navbar.Collapse className="items-center md:justify-end justify-center flex">
-        <Nav className="mb-2 w-12/12 no-underline flex text-xl items-center ml-auto">
+        <Nav className="mb-2 w-12/12 no-underline flex text-xl items-center left-0 md:ml-auto text-center">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}

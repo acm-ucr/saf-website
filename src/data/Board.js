@@ -1,8 +1,8 @@
-import Ryan from "../../public/images/board/Ryan.png";
-import Riti from "../../public/images/board/Riti.png";
-import Kishan from "../../public/images/board/Kishan.png";
-import Chinmayi from "../../public/images/board/Chinmayi.png";
-import Zuha from "../../public/images/board/Zuha.png";
+import Ryan from "../../public/images/board/Ryan.webp";
+import Riti from "../../public/images/board/Riti.webp";
+import Kishan from "../../public/images/board/Kishan.webp";
+import Chinmayi from "../../public/images/board/Chinmayi.webp";
+import Zuha from "../../public/images/board/Zuha.webp";
 import Ayesha from "../../public/images/board/Ayesha.webp";
 
 export const board = [
