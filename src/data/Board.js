@@ -1,34 +1,39 @@
-import placeholderBoard from "../../public/images/placeholder_board.webp";
+import Ryan from "../../public/images/board/Ryan.png";
+import Riti from "../../public/images/board/Riti.png";
+import Kishan from "../../public/images/board/Kishan.png";
+import Chinmayi from "../../public/images/board/Chinmayi.png";
+import Zuha from "../../public/images/board/Zuha.png";
+import Ayesha from "../../public/images/board/Ayesha.webp";
 
 export const board = [
   {
-    image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    image: Ryan,
+    name: "Robin Abeyratne",
+    position: "Coordinator",
   },
   {
-    image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    image: Riti,
+    name: "Riti Desai",
+    position: "Representative",
   },
   {
-    image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    image: Kishan,
+    name: "Kishan Patel",
+    position: "Representative",
   },
   {
-    image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    image: Chinmayi,
+    name: "Chinmayi",
+    position: "Co-President",
   },
   {
-    image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    image: Zuha,
+    name: "Zuha Hayat",
+    position: "Director",
   },
   {
-    image: placeholderBoard,
-    name: "First Last",
-    position: "President",
+    image: Ayesha,
+    name: "Ayesha Perrera",
+    position: "Public Relations",
   },
 ];
