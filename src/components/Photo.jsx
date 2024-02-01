@@ -8,13 +8,13 @@ const Photo = () => {
     <div className="flex relative justify-center items-center">
       <Image
         src={mandala}
-        className="max-sm:hidden w-1/3 absolute z-1 -left-[-1%]"
+        className="max-sm:hidden w-1/5 absolute z-1 -left-[-18%]"
         alt="mandala"
       />
-      <Image src={image1} className="w-3/4 z-2" alt="group photo" />
+      <Image src={image1} className="w-1/2 z-2" alt="group photo" />
       <Image
         src={mandala}
-        className="max-sm:hidden w-1/3 absolute z-1 -right-[-1%]"
+        className="max-sm:hidden w-1/5 absolute z-1 -right-[-18%]"
         alt="mandala"
       />
     </div>
