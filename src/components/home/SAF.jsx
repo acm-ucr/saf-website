@@ -38,12 +38,6 @@ const SAF = () => {
         className="sm:w-1/4 w-1/4  md:w-1/12 lg:w-1/12"
       />
 
-      <Image
-        src={whiteLogo}
-        alt="SAF Logo"
-        className="sm:w-1/4 w-1/4  md:w-1/12 lg:w-1/12"
-      />
-
       <motion.div
         variants={SAFanimation}
         transition={{ ...transition, delay: 0.4 }}
