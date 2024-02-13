@@ -14,6 +14,7 @@ const Home = () => {
       <PhotoStrip imageBar={ImageBar1} />
       <WhyJoin />
       <PhotoStrip imageBar={ImageBar2} />
+
       <GetInvolved />
     </div>
   );
