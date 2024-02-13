@@ -20,7 +20,7 @@ const transition = {
 
 const SAF = () => {
   return (
-    <div className="flex flex-col w-4/5 relative overflow-clip w-full justify-center items-center py-5 bg-saf-red gap-3">
+    <div className="flex flex-col relative overflow-clip w-full justify-center items-center py-5 bg-saf-red gap-3">
       <Image
         src={Ripple}
         className="w-full absolute -left-[80%] translate-y-1/3 sm:w-1/2 md:w-1/3 lg:w-1/3 md:-left-[8%] lg:-left-[8%]"

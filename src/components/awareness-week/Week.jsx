@@ -1,5 +1,6 @@
 import React from "react";
 import { events } from "@/data/WeeklyEvents.js";
+
 const Week = () => {
   return (
     <div className="w-full bg-saf-red text-white flex flex-col justify-center items-center">
