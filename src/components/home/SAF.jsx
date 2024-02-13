@@ -4,6 +4,7 @@ import Image from "next/image";
 import whiteLogo from "../../../public/svg/white-logo.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Ripple from "../../../public/svg/ripple.svg";
 
 const SAFanimation = {
   hidden: { opacity: 0, y: 20 },
