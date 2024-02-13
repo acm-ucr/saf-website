@@ -2,7 +2,7 @@ import React from "react";
 import Title from "@/components/Title";
 import Description from "@/components/Description";
 import Image from "next/image";
-import banquet from "../../../public/images/banquet.png";
+import banquet from "../../../public/images/banquet.webp";
 
 const page = () => {
   return (
