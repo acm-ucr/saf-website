@@ -19,7 +19,24 @@ const transition = {
 
 const SAF = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center py-5 bg-saf-red gap-3">
+    <div className="flex flex-col w-4/5 relative overflow-clip w-full justify-center items-center py-5 bg-saf-red gap-3">
+      <Image
+        src={Ripple}
+        className="w-1/3 absolute -left-[8%] translate-y-1/3 "
+        alt={"ripple asset svg"}
+      />
+      <Image
+        src={Ripple}
+        className="w-1/3 absolute -right-[1%] rotate-90 -translate-y-1/5"
+        alt={"ripple asset svg"}
+      />
+
+      <Image
+        src={whiteLogo}
+        alt="SAF Logo"
+        className="sm:w-1/4 w-1/4  md:w-1/12 lg:w-1/12"
+      />
+
       <Image
         src={whiteLogo}
         alt="SAF Logo"
