@@ -11,7 +11,11 @@ const Photo = () => {
         className="max-sm:hidden w-1/5 absolute z-1 -left-[-18%]"
         alt="mandala"
       />
-      <Image src={image1} className="w-1/2 z-2" alt="group photo" />
+      <Image
+        src={image1}
+        className="w-5/6 z-2 sm:w-1/2 z-2"
+        alt="group photo"
+      />
       <Image
         src={mandala}
         className="max-sm:hidden w-1/5 absolute z-1 -right-[-18%]"
