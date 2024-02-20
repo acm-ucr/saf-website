@@ -26,7 +26,7 @@ const page = () => {
             "SAF hopes to have a South Asian director in Asian Pacific Student Programs and hopes to one day have a South Asian Costa Hall center at UCR. The purpose of these two goals is to provide access and resources for South Asian students. SAF is a politically oriented student organization with the goal of raising awareness of the diaspora experience and various social injustices that have occurred in South Asia to the overall UC Riverside campus. "
           }
         </p>
-        <p className="text-xs sm:text-xl">
+        <p className="text-xs sm:text-xl mb-10">
           {
             "In addition, SAF is a social and cultural organization that strives to have the South Asian student population celebrate culture through festival inclusive religious events. It is important to have this organization on campus in order to represent the South Asian population at UCR."
           }
