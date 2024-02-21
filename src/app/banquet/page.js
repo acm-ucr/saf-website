@@ -14,7 +14,7 @@ const page = () => {
           "The South Asian Federation organization at the University of California, Riverside organizes a Banquet annually. This event is an opportunity to celebrate the beautiful South Asian culture and to enjoy South Asian food and music along with several different events!"
         }
       />
-      <Image src={banquet} className="w-1/2 mb-10" alt="banquet" />
+      <Image src={banquet} className="lg:w-33 w-full mb-10" alt="banquet" />
     </div>
   );
 };
