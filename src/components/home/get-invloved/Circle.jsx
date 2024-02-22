@@ -8,7 +8,7 @@ const Circle = ({ text, link, icon }) => {
   return (
     <Col
       xs={4}
-      mb={3}
+      md={3}
       lg={2}
       className="flex flex-col items-center justify-center justify-self-center self-start"
     >
