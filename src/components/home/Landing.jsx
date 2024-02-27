@@ -6,7 +6,7 @@ import Image from "next/image";
 const Landing = () => {
   return (
     <div className="w-full min-h-screen flex flex-row items-center relative">
-      <Image src={Flower} alt="saf flower" className="hidden xl:block w-1/3" />
+      <Image src={Flower} alt="saf flower" className="hidden xl:block w-1/3 " />
       <Image src={Flowermobile} alt="saf flower" className="w-1/2 xl:hidden" />
       <div className="flex flex-row justify-end md:w-2/3 absolute md:relative">
         <Image
@@ -24,7 +24,7 @@ const Landing = () => {
             student population at UC Riverside
           </p>
         </div>
-        <div className="w-2 md:w-4 bg-saf-beige-200 ml-2 md:ml-4 md:mr-[5%] mr-[3%] z-index:2" />
+        <div className="w-2 md:w-4 bg-saf-beige-200 ml-2 md:ml-4 md:mr-[5%] mr-[3%] z-2" />
       </div>
     </div>
   );

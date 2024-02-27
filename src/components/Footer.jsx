@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-4 mr-3">
-        <div class="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-4">
           {links.map((link, index) => (
             <Link
               key={index}
