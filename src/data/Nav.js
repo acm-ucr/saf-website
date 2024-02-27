@@ -1,6 +1,6 @@
 export const items = [
   {
-    name: "HOME",
+    name: "",
     link: "/",
   },
   {
