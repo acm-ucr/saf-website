@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         lora: ["var(--font-lora)"],
-        libre: ["var(--font-libre_bodoni)"],
+        libre: ["var(--font-libre)"],
       },
       keyframes: {
         marquee: {
@@ -33,6 +33,7 @@ module.exports = {
       animation: {
         marquee: "marquee 30s linear infinite",
         "marquee-continuation": "marquee-continuation 30s linear infinite",
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },
