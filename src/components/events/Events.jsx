@@ -52,7 +52,7 @@ const Events = ({ button = true }) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full my-5">
+    <div className="flex flex-col items-center justify-center w-full my-3">
       <motion.div
         variants={animation}
         transition={{ delay: 0.2 }}
