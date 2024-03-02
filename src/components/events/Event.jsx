@@ -25,12 +25,12 @@ const Event = ({
           <div className="md:text-xl font-medium pr-2 ">{month}</div>
           <div className="md:text-xl font-medium pr-1">{date}</div>
         </div>
-        
+
         <div className="flex flex-row">
           <div className="md:text-xl font-medium md:ml-8">{start}</div>
           <div className="md:text-xl font-medium mr-16">-{end}</div>
         </div>
- 
+
         <div className="md:text-xl font-medium mr-16">{location}</div>
         <div className="md:text-xl font-medium">
           {link && (
