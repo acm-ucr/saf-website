@@ -12,19 +12,19 @@ const Landing = () => {
         <Image
           src={Ripplel}
           alt="ripples image"
-          className="hidden md:block w-1/2 md:absolute -translate-y-1/2 z-0 "
+          className="hidden md:block w-1/2 md:absolute -translate-y-1/2 z-10"
         />
         <div className="flex flex-col items-end md:gap-3 w-5/6 z-8">
-          <p className="text-right font-libre text-2xl md:text-6xl text-saf-red text-nowrap font-bold mt-2 mb-1">
+          <p className="text-right font-libre text-2xl md:text-6xl text-saf-red text-nowrap font-bold mt-2 mb-1 z-10">
             South Asian Federation
           </p>
 
-          <p className="text-md leading-tight md:text-3xl text-black text-right xl:w-3/4 font-lora mb-2">
+          <p className="text-md leading-tight md:text-3xl text-black text-right xl:w-3/4 font-lora mb-2 z-10">
             culturally, politically, and socially uniting the South Asian
             student population at UC Riverside
           </p>
         </div>
-        <div className="w-2 md:w-4 bg-saf-beige-200 ml-2 md:ml-4 md:mr-[5%] mr-[3%]" />
+        <div className="w-2 md:w-4 bg-saf-beige-200 ml-2 md:ml-4 md:mr-[5%] mr-[3%] z-2" />
       </div>
     </div>
   );
