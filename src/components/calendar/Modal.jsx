@@ -11,6 +11,15 @@ const Modal = ({ event, setEvent }) => {
         >
           {event.summary}
         </p>
+
+        <div className="absolute right-2 md:py-3 px-12 md:px-12 text-lg md:text-2xl text-white">
+          {!event.allDay &&
+            new Date(event.start).toLocaleTimeString(navigator.language, {
+              hour: "2-digit",
+              minute: "2-digit",
+            })}
+        </div>
+
         <AiOutlinePlus
           onClick={() => setEvent(null)}
           className="text-white rotate-45 p-0 hover:scale-110 duration-300 hover:cursor-pointer text-3xl m-3"
