@@ -14,33 +14,34 @@ const GIanimation = {
 };
 
 const transition = {
-  duration: 0.7,
+  duration: 0.5,
 };
 
 const GetInvolved = () => {
   return (
-    <div className=" my-10 md:my-14 flex flex-col items-center justify-center">
+    <div className="my-10 md:my-14 flex flex-col items-center justify-center">
       <p className="font-libre font-bold text-xl md:text-4xl mb-6 md:mb-14">
         Get Involved
       </p>
-      <motion.div
-        variants={GIanimation}
-        transition={{ ...transition, delay: 0.2 }}
-        initial="hidden"
-        whileInView="show"
-      >
-        <Row className="items-center justify-center w-full md:w-screen">
-          {links &&
-            links.map((linkData, index) => (
+
+      <Row className="items-center justify-center w-full md:w-screen">
+        {links &&
+          links.map((linkData, index) => (
+            <motion.div
+              key={index}
+              variants={GIanimation}
+              transition={{ ...transition, delay: 0.15 * index }}
+              initial="hidden"
+              whileInView="show"
+            >
               <Circle
-                key={index}
                 text={linkData.text}
                 link={linkData.link}
                 icon={linkData.icon}
               />
-            ))}
-        </Row>
-      </motion.div>
+            </motion.div>
+          ))}
+      </Row>
     </div>
   );
 };
