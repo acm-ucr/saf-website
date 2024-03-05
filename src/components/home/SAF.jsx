@@ -37,7 +37,7 @@ const SAF = () => {
           Who We Are
         </p>
       </motion.div>
-      <p className=" text-white text-center sm:text-sm md:text-base lg:text-xl font-libre font-serif h-1/2 w-5/6">
+      <p className=" text-white text-center sm:text-sm md:text-base lg:text-xl font-libre font-serif h-1/2 w-5/6 z-3">
         {" "}
         SAF, at UC Riverside, is Riverside’s South Asian Club. We aim to serve
         as the umbrella for all organizations that identify as South Asian. We
