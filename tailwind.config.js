@@ -16,6 +16,10 @@ module.exports = {
           "beige-200": "#E2C69E",
         },
       },
+      fontFamily: {
+        lora: ["var(--font-lora)"],
+        libre: ["var(--font-libre)"],
+      },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },
@@ -29,6 +33,7 @@ module.exports = {
       animation: {
         marquee: "marquee 30s linear infinite",
         "marquee-continuation": "marquee-continuation 30s linear infinite",
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },

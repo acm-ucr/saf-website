@@ -1,6 +1,20 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Ripple from "../../../public/svg/ripple.svg";
+import { motion } from "framer-motion";
+
+const WJanimation = {
+  hidden: { opacity: 0, y: 10 },
+  show: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
+const transition = {
+  duration: 0.7,
+};
 
 const WhyJoin = () => {
   return (
@@ -11,9 +25,17 @@ const WhyJoin = () => {
           className="w-1/2 absolute -right-[10%] -top-[20%] "
           alt={"ripple asset svg"}
         />
-        <p className="ml-3 sm:ml-8 text-2xl sm:text-4xl font-bold font-libre text-white mt-20">
-          WhyJoinSAF
-        </p>
+        <motion.div
+          variants={WJanimation}
+          transition={{ ...transition, delay: 0.2 }}
+          initial="hidden"
+          whileInView="show"
+        >
+          <p className="ml-3 sm:ml-8 text-2xl sm:text-4xl font-bold font-libre text-white mt-20">
+            WhyJoinSAF
+          </p>
+        </motion.div>
+
         <p className="sm:w-3/4 font-lora text-xs sm:text-xl z-2">
           Explore rich South Asian traditions, engage in community service, and
           develop leadership skills at SAF! Join a vibrant community celebrating
@@ -24,14 +46,56 @@ const WhyJoin = () => {
       <div className="hidden sm:block w-1/4">
         <div className="flex flex-col justify-center items-center w-full">
           <ul className="flex flex-col list-disc list-outside">
-            <li className="mt-3 font-libre leading-10 text-xl">
-              Cultural Appreciation
-            </li>
-            <li className="font-libre leading-10 text-xl">Inclusivity</li>
-            <li className="font-libre leading-10 text-xl">Community</li>
-            <li className="font-libre leading-10 text-xl">Diversity</li>
-            <li className="font-libre leading-10 text-xl">Leadership</li>
-            <li className="font-libre leading-10 text-xl">Innovation</li>
+            <motion.div
+              variants={WJanimation}
+              transition={{ delay: 0.1 }}
+              initial="hidden"
+              whileInView="show"
+            >
+              <li className="mt-3 font-libre leading-10 text-xl">
+                Cultural Appreciation
+              </li>
+            </motion.div>
+            <motion.div
+              variants={WJanimation}
+              transition={{ delay: 0.1 }}
+              initial="hidden"
+              whileInView="show"
+            >
+              <li className="font-libre leading-10 text-xl">Inclusivity</li>
+            </motion.div>
+            <motion.div
+              variants={WJanimation}
+              transition={{ delay: 0.3 }}
+              initial="hidden"
+              whileInView="show"
+            >
+              <li className="font-libre leading-10 text-xl">Community</li>
+            </motion.div>
+            <motion.div
+              variants={WJanimation}
+              transition={{ delay: 0.5 }}
+              initial="hidden"
+              whileInView="show"
+            >
+              <li className="font-libre leading-10 text-xl">Diversity</li>
+            </motion.div>
+            <motion.div
+              variants={WJanimation}
+              transition={{ delay: 0.7 }}
+              initial="hidden"
+              whileInView="show"
+            >
+              <li className="font-libre leading-10 text-xl">Leadership</li>
+            </motion.div>
+            <motion.div
+              variants={WJanimation}
+              transition={{ delay: 0.9 }}
+              initial="hidden"
+              whileInView="show"
+            >
+              <li className="font-libre leading-10 text-xl">Innovation</li>
+            </motion.div>
           </ul>
         </div>
       </div>

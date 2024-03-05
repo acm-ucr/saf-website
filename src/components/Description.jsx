@@ -7,7 +7,7 @@ const Description = ({ title, text }) => {
         <div className="bg-saf-beige-200 w-3 h-11" />
         <p className="text-lg font-bold sm:text-3xl h-full m-0">{title}</p>
       </div>
-      <p className="text-xs  sm:text-xl">{text}</p>
+      <p className="text-xs sm:text-xl">{text}</p>
     </div>
   );
 };

@@ -12,15 +12,17 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-4 mr-3">
-        {links.map((link, index) => (
-          <Link
-            key={index}
-            href={link.link}
-            className="text-saf-red hover:-translate-y-0.5 duration-300 text-4xl"
-          >
-            {link.icon}
-          </Link>
-        ))}
+        <div className="hidden md:flex space-x-4">
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.link}
+              className="text-saf-red hover:-translate-y-0.5 duration-300 text-4xl"
+            >
+              {link.icon}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

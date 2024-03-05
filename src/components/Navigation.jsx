@@ -14,9 +14,9 @@ const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      expand="md"
+      expand="lg"
       fixed="top"
-      className="w-full m-0 md:min-h-[5vh] p-0 bg-saf-brown bg-opacity-80 justify-between items-center backdrop-blur-sm"
+      className="w-full m-0 md:min-h-[6vh] p-0 bg-saf-brown bg-opacity-80 justify-between items-center backdrop-blur-sm"
     >
       <Navbar.Brand className="p-0">
         <Link
@@ -35,8 +35,8 @@ const Navigation = () => {
       >
         <FaBars className=" text-saf-beige-100 text-xl" />
       </Navbar.Toggle>
-      <Navbar.Collapse className="items-center md:justify-end justify-center flex">
-        <Nav className="mb-2 w-12/12 no-underline flex text-xl items-center left-0 md:ml-auto text-center">
+      <Navbar.Collapse className="items-center lg:justify-end justify-center flex">
+        <Nav className="mb-2 w-12/12 no-underline flex text-xl items-center left-0 lg:ml-auto text-center">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}
