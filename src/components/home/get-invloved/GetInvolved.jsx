@@ -24,7 +24,7 @@ const GetInvolved = () => {
         Get Involved
       </p>
 
-      <Row className="items-center justify-center w-full md:w-screen">
+      <Row className="flex flex-row items-center justify-center w-full md:w-screen">
         {links &&
           links.map((linkData, index) => (
             <motion.div
