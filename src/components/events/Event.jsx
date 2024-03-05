@@ -6,10 +6,11 @@ const Event = ({
   day = "",
   month = "",
   date = "",
-  start = "8pm",
-  end = "9pm",
+  time = "",
+  // start = "",
+  // end = "",
   summary = "",
-  location = "Location 123",
+  location = "",
   link = "",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis. Fringilla est ullamcorper eget nulla. Dictum at tempor commodo ullamcorper a lacus vestibulum sed. Ante in nibh mauris cursus mattis molestie a iaculis. Potenti nullam ac tortor vitae purus. In arcu cursus euismod quis. Donec ac odio tempor orci dapibus ultrices in.",
 }) => {
@@ -27,8 +28,9 @@ const Event = ({
         </div>
 
         <div className="flex flex-row">
-          <div className="md:text-xl font-medium md:ml-8">{start}</div>
-          <div className="md:text-xl font-medium mr-16">-{end}</div>
+          {/* <div className="md:text-xl font-medium mr-16">-{start}</div>
+          <div className="md:text-xl font-medium mr-16">-{end}</div> */}
+          <div className="md:text-xl font-medium mr-16">-{time}</div>
         </div>
 
         <div className="md:text-xl font-medium mr-16">{location}</div>
