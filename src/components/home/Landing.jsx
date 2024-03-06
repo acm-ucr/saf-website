@@ -12,9 +12,9 @@ const Landing = () => {
         <Image
           src={Ripplel}
           alt="ripples image"
-          className="hidden md:block w-1/2 md:absolute -translate-y-1/2 z-0 "
+          className="hidden md:block w-1/2 md:absolute -translate-y-1/2 z-1"
         />
-        <div className="flex flex-col items-end md:gap-3 w-5/6 z-8">
+        <div className="flex flex-col items-end md:gap-3 w-5/6 z-10">
           <p className="text-right font-libre text-2xl md:text-6xl text-saf-red text-nowrap font-bold mt-2 mb-1">
             South Asian Federation
           </p>

@@ -40,7 +40,7 @@ const SAF = () => {
 
       <motion.div
         variants={SAFanimation}
-        transition={{ ...transition, delay: 0.4 }}
+        transition={{ ...transition, delay: 0.2 }}
         initial="hidden"
         whileInView="show"
       >
@@ -49,7 +49,13 @@ const SAF = () => {
           Who We Are
         </p>
       </motion.div>
-      <p className=" text-white text-center sm:text-sm md:text-base lg:text-xl font-lora h-1/2 w-5/6">
+      <motion.p
+        variants={SAFanimation}
+        transition={{ ...transition, delay: 0.4 }}
+        initial="hidden"
+        whileInView="show"
+        className=" text-white text-center sm:text-sm md:text-base lg:text-xl font-lora h-1/2 w-5/6"
+      >
         {" "}
         SAF, at UC Riverside, is Riverside’s South Asian Club. We aim to serve
         as the umbrella for all organizations that identify as South Asian. We
@@ -58,14 +64,14 @@ const SAF = () => {
         South Asia. We are also socially and culturally oriented, striving to
         have the South Asian student population celebrate culture through
         festivals and inclusive religious events.
-      </p>
+      </motion.p>
       <motion.div
         whileHover={{
           scale: 1.1,
           textShadow: "0px 0px 4px rgb(265,255,255)",
         }}
         variants={SAFanimation}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.7 }}
         initial="hidden"
         whileInView="show"
       >

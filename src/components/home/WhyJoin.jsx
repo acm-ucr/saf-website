@@ -58,7 +58,7 @@ const WhyJoin = () => {
             </motion.div>
             <motion.div
               variants={WJanimation}
-              transition={{ delay: 0.1 }}
+              transition={{ delay: 0.2 }}
               initial="hidden"
               whileInView="show"
             >
@@ -74,7 +74,7 @@ const WhyJoin = () => {
             </motion.div>
             <motion.div
               variants={WJanimation}
-              transition={{ delay: 0.5 }}
+              transition={{ delay: 0.4 }}
               initial="hidden"
               whileInView="show"
             >
@@ -82,7 +82,7 @@ const WhyJoin = () => {
             </motion.div>
             <motion.div
               variants={WJanimation}
-              transition={{ delay: 0.7 }}
+              transition={{ delay: 0.5 }}
               initial="hidden"
               whileInView="show"
             >
@@ -90,7 +90,7 @@ const WhyJoin = () => {
             </motion.div>
             <motion.div
               variants={WJanimation}
-              transition={{ delay: 0.9 }}
+              transition={{ delay: 0.6 }}
               initial="hidden"
               whileInView="show"
             >
