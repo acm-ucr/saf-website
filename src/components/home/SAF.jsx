@@ -66,10 +66,6 @@ const SAF = () => {
         festivals and inclusive religious events.
       </motion.p>
       <motion.div
-        whileHover={{
-          scale: 1.1,
-          textShadow: "0px 0px 4px rgb(265,255,255)",
-        }}
         variants={SAFanimation}
         transition={{ delay: 0.7 }}
         initial="hidden"
@@ -77,7 +73,7 @@ const SAF = () => {
       >
         <Link
           href="/about"
-          className="hover:underline min-w-[10rem] border-1 border-white w-1/6 text-center no-underline text-white px-3 py-3 sm:text-sm md:text-base lg:text-lg font-libre font-bold font-serif"
+          className="hover:underline min-w-[10rem] border-1 border-white w-1/6 text-center no-underline text-white px-3 py-3 sm:text-sm md:text-base lg:text-lg font-libre font-bold"
         >
           Learn More
         </Link>
