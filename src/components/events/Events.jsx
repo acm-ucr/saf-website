@@ -95,7 +95,7 @@ const Events = ({ button = true }) => {
                     .toLocaleString("default", { month: "short" })
                     .toUpperCase()}
                   day={event.start.getDate()}
-                  time={formattedString}
+                  start={formattedString}
                   summary={event.summary}
                   location={event.location}
                   link={event.link}
