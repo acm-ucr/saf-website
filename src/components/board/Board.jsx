@@ -20,7 +20,7 @@ const Board = ({ position, name, image }) => {
         <div className="absolute -left-[-16%] -top-[-15%] justify-center z-2 w-2/3 ">
           <Image src={image} alt="SAF Board Member" />
         </div>
-        <div className="relative -top-[-20px] md:-top-[-5px] flex flex-col items-center justify-center font-serif font-bold text-xl ">
+        <div className="relative -top-[-20px] md:-top-[-5px] flex flex-col items-center justify-center font-bold text-xl ">
           <div className=" flex flex-col items-center justify-center text-saf-red inset-x-0 z-2 relative -top-[40px] text-sm md:text-2xl font-libre">
             {position}
           </div>
