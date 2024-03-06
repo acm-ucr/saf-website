@@ -23,12 +23,12 @@ const SAF = () => {
     <div className="flex flex-col relative overflow-clip w-full justify-center items-center py-5 bg-saf-red gap-3">
       <Image
         src={Ripple}
-        className="w-full absolute -left-[80%] translate-y-1/3 sm:w-1/2 md:w-1/3 lg:w-1/3 md:-left-[8%] lg:-left-[8%]"
+        className="w-full absolute -left-[80%] translate-y-1/3 sm:w-1/2 md:w-1/3 lg:w-1/3 md:-left-[8%] lg:-left-[8%] z-3 "
         alt={"ripple asset svg"}
       />
       <Image
         src={Ripple}
-        className="w-full absolute -right-[50%] rotate-90 -translate-y-1/3 sm:w-1/2 md:w-1/3 lg:w-1/3 md:-right-[1%] lg:-right-[1%] md:-translate-y-1/5 lg:-translate-y-1/5"
+        className="w-full absolute -right-[50%] rotate-90 -translate-y-1/3 sm:w-1/2 md:w-1/3 lg:w-1/3 md:-right-[1%] lg:-right-[1%] md:-translate-y-1/5 lg:-translate-y-1/5 z-3"
         alt={"ripple asset svg"}
       />
 
