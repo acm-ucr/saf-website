@@ -2,18 +2,19 @@ import Meghna from "../../public/images/assets/MeghnaChunduru.webp";
 import Riti from "../../public/images/assets/RitiDesai.webp";
 import Ali from "../../public/images/assets/AliHussain.webp";
 import Anisa from "../../public/images/assets/AnisaOza.webp";
-import Aparna from "../../public/images/assets/AparnaPetluri.webp";
 import Ayesha from "../../public/images/assets/AyeshaPerera.webp";
 import Harshitaa from "../../public/images/assets/HarshitaaArunkumar.webp";
-import Heili from "../../public/images/assets/HeiliShah.webp";
 import Krina from "../../public/images/assets/KrinaShah.webp";
 import Parnika from "../../public/images/assets/ParnikaNammi.webp";
-import Ria from "../../public/images/assets/RiaRadtke.webp";
 import Ruthie from "../../public/images/assets/RuthieShenoy.webp";
 import Ruth from "../../public/images/assets/RuthRapuri.webp";
-import Shireen from "../../public/images/assets/ShireenMehta.webp";
 import Shriya from "../../public/images/assets/ShriyaGore.webp";
 import Siya from "../../public/images/assets/SiyaPanchal.webp";
+import Heili from "../../public/images/assets/HeiliShah.webp";
+import Shireen from "../../public/images/assets/ShireenMehta.webp";
+import Ria from "../../public/images/assets/RiaRadtke.webp";
+import Aparna from "../../public/images/assets/AparnaPetluri.webp";
+
 
 export const board = [
   {
