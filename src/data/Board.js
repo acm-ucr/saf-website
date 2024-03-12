@@ -15,7 +15,6 @@ import Shireen from "../../public/images/assets/ShireenMehta.webp";
 import Ria from "../../public/images/assets/RiaRadtke.webp";
 import Aparna from "../../public/images/assets/AparnaPetluri.webp";
 
-
 export const board = [
   {
     image: Meghna,
