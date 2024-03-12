@@ -43,16 +43,16 @@ const WhyJoin = () => {
           experience!
         </p>
       </div>
-      <div className="hidden sm:block w-1/4">
+      <div className="hidden md:block w-1/4">
         <div className="flex flex-col justify-center items-center w-full">
-          <ul className="flex flex-col list-disc list-outside">
+          <ul className="ml-5 flex flex-col list-disc list-outside">
             <motion.div
               variants={WJanimation}
               transition={{ delay: 0.1 }}
               initial="hidden"
               whileInView="show"
             >
-              <li className="mt-3 font-libre leading-10 text-xl">
+              <li className="whitespace-nowrap mt-3 font-libre leading-10 sm:text-xl">
                 Cultural Appreciation
               </li>
             </motion.div>
