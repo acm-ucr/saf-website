@@ -18,7 +18,7 @@ export const links = [
 
   {
     icon: <FaSquareFacebook />,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/UCRSAF?mibextid=LQQJ4d",
   },
 
   {

@@ -14,8 +14,6 @@ const transition = {
   duration: 0.8,
 };
 
-
-
 const Description = ({ title, text, scrollYProgress }) => {
   return (
     <div className="flex flex-col w-5/6 gap-2">
