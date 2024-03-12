@@ -8,12 +8,12 @@ import {
 export const links = [
   {
     icon: <FaInstagram />,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/ucrsaf",
   },
 
   {
     icon: <FaEnvelope />,
-    link: "https://www.google.com/",
+    link: "mailto:safucr@gmail.com",
   },
 
   {
