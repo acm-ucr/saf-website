@@ -10,28 +10,28 @@ export const links = [
   {
     text: "Discord",
     icon: <FaDiscord />,
-    link: "https://discord.gg/vwcgqrJ3",
+    link: "https://discord.gg/gK9tCdzB",
   },
 
   {
     text: "Instagram",
     icon: <RiInstagramFill />,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/ucrsaf/?hl=en",
   },
 
   {
     text: "Facebook",
     icon: <FaSquareFacebook />,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/UCRSAF?mibextid=LQQJ4d",
   },
   {
     text: "Email",
     icon: <FaEnvelope />,
-    link: "https://www.google.com/",
+    link: "mailto:safucr@gmail.com",
   },
   {
     text: "Youtube",
     icon: <FaYoutube />,
-    link: "https://www.youtube.com/",
+    link: "https://www.youtube.com/channel/UCsrtjiMal0p_ETZYnlp6zyQ",
   },
 ];
