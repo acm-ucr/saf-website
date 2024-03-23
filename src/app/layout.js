@@ -7,8 +7,16 @@ import { Lora } from "next/font/google";
 // eslint-disable-next-line camelcase
 import { Libre_Bodoni } from "next/font/google";
 
-const lora = Lora({ subsets: ["latin"] });
-const libre = Libre_Bodoni({ subsets: ["latin"] });
+const lora = Lora({
+  subsets: ["latin"],
+  display: "swap",
+  varible: "--font-lora",
+});
+const libre = Libre_Bodoni({
+  subsets: ["latin"],
+  display: "swap",
+  varible: "--font-libre",
+});
 
 export const metadata = {
   title: "SAF at UCR",
@@ -17,8 +25,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${lora.variable} ${libre.variable}`}>
+    <html lang="en" className={`${lora.variable} ${libre.variable}`}>
+      <body>
         <Navigation />
         <div className="w-full flex flex-col bg-saf-beige-100 items-center justify-center">
           {children}
