@@ -43,6 +43,7 @@ const Description = ({ title, text, scrollYProgress }) => {
           <p className="text-xs sm:text-xl">{text}</p>
         </motion.div>
       </div>
+    </div>
   );
 };
 

@@ -23,6 +23,6 @@ export const links = [
 
   {
     icon: <FaLinkedinIn />,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/south-asian-federation/",
   },
 ];

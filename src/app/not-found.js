@@ -4,17 +4,16 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col w-full items-center bg-saf-beige-100">
+    <div className="flex flex-col w-full items-center  md:min-h-screen">
       <Image src={TitleAsset} alt="Title Svg" className="w-4/5 transform" />
-      <p className="text-center text-8xl text-saf-red font-bold">404</p>
-      <p className="text-center text-3xl text-saf-brown font-libre font-bold">
+      <div className="text-center text-8xl text-saf-red font-bold">404</div>
+      <div className="text-center text-3xl text-saf-brown font-libre font-bold mb-3">
         page not found
-      </p>
+      </div>
       <Link
         as={Link}
-        eventkey="1"
         href="/"
-        className="border-1 border-saf-brown w-1/6 text-center no-underline text-saf-brown px-3 py-3 text-sm font-libre font-bold"
+        className="border-1 text-xl border-saf-brown w-1/6 text-center no-underline text-saf-brown px-3 py-3 font-libre font-bold hover:underline"
       >
         BACK TO HOME
       </Link>
