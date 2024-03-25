@@ -1,39 +1,42 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import mandala from "../../../public/svg/board-mandala.svg";
-import Col from "react-bootstrap/Col";
-
+import { motion } from "framer-motion";
 const Board = ({ position, name, image }) => {
+  const slidedownanimation = {
+    hidden: { opacity: 0, y: -10 },
+    show: {
+      opacity: 1,
+      y: 0,
+    },
+  };
   return (
-    <Col
-      xs={6}
-      md={5}
-      lg={4}
-      className="flex flex-col items-center justify-center p-1 justify-self-center self-start "
+    <motion.div
+      variants={slidedownanimation}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: true, amount: 0.5 }}
+      initial="hidden"
+      whileInView="show"
+      className="flex flex-col items-center group font-bold font-libre text-sm md:text-2xl 2xl:text-3xl"
     >
-      <div className="flex flex-col justify-center items-center relative group">
+      <div className=" flex items-center justify-center relative w-36 md:w-[325px] 2xl:w-[400px] aspect-square ">
         <Image
           src={mandala}
           alt="Mandala"
-          className="w-full h-full z-1 opacity-20 group-hover:animate-spin-slow"
+          className="opacity-20 group-hover:animate-spin-slow w-full"
         />
-        <div className="absolute -left-[-16%] -top-[-15%] justify-center z-2 w-2/3">
-          <Image
-            src={image}
-            alt="SAF Board Member"
-            className="w-52 h-52 rounded-full object-cover"
-          />
-        </div>
-        <div className="relative -top-[-20px] md:-top-[-5px] flex flex-col items-center justify-center font-bold text-xl ">
-          <div className=" flex flex-col items-center justify-center text-saf-red inset-x-0 z-2 relative -top-[40px] text-sm md:text-2xl font-libre">
-            {position}
-          </div>
-          <div className="relative -top-[40px] text-sm md:text-2xl font-lora">
-            {name}
-          </div>
-        </div>
+        <Image
+          src={image}
+          alt="SAF Board Member"
+          className="absolute w-2/3 aspect-square rounded-full object-cover"
+        />
       </div>
-    </Col>
+      <p className="text-saf-red -mt-3 md:-mt-10 mb-0 max-w-36 md:max-w-none text-center">
+        {position}
+      </p>
+      <p>{name}</p>
+    </motion.div>
   );
 };
 
