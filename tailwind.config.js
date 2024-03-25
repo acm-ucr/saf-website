@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         lora: ["var(--font-lora)"],
-        libre: ["var(--font-libre-bodoni)"],
+        libre: ["var(--font-libre)"],
       },
       keyframes: {
         marquee: {
