@@ -14,7 +14,7 @@ const Modal = ({ event, setEvent }) => {
 
         <div className="absolute right-2 md:py-3 px-12 md:px-12 text-lg md:text-2xl text-white">
           {event.allDay
-            ? "Allday"
+            ? "All Day"
             : new Date(event.start).toLocaleTimeString(navigator.language, {
                 hour: "2-digit",
                 minute: "2-digit",
