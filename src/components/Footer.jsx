@@ -7,9 +7,9 @@ import redLogo from "../../public/svg/red-logo.svg";
 const Footer = () => {
   return (
     <div className="p-3 flex items-center justify-between bg-saf-beige-200">
-      <div>
-        <Image alt="saf-logo" className="w-16" src={redLogo} />
-      </div>
+      <Link href={"/"} className="w-16">
+        <Image alt="saf-logo" src={redLogo} />
+      </Link>
 
       <div className="flex gap-4 mr-3">
         <div className="hidden md:flex space-x-4">
