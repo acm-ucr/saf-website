@@ -13,16 +13,17 @@ const Modal = ({ event, setEvent }) => {
         </p>
 
         <div className="absolute right-2 md:py-3 px-12 md:px-12 text-lg md:text-2xl text-white">
-          {!event.allDay &&
-            new Date(event.start).toLocaleTimeString(navigator.language, {
-              hour: "2-digit",
-              minute: "2-digit",
-            })}
-          {" - "}
-          {new Date(event.end).toLocaleTimeString(navigator.language, {
-            hour: "2-digit",
-            minute: "2-digit",
-          })}
+          {event.allDay
+            ? "Allday"
+            : new Date(event.start).toLocaleTimeString(navigator.language, {
+                hour: "2-digit",
+                minute: "2-digit",
+              }) +
+              " - " +
+              new Date(event.end).toLocaleTimeString(navigator.language, {
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
         </div>
 
         <AiOutlinePlus
