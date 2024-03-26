@@ -1,6 +1,7 @@
 import Landing from "@/components/home/Landing";
 import SAF from "@/components/home/SAF";
 import PhotoStrip from "@/components/home/PhotoStrip";
+import PhotoStrip2 from "@/components/home/PhotoStrip2";
 import WhyJoin from "@/components/home/WhyJoin";
 import ImageBar1 from "../../public/images/ImageBar1.webp";
 import ImageBar2 from "../../public/images/ImageBar2.webp";
@@ -13,7 +14,7 @@ const Home = () => {
       <SAF />
       <PhotoStrip imageBar={ImageBar1} />
       <WhyJoin />
-      <PhotoStrip imageBar={ImageBar2} />
+      <PhotoStrip2 imageBar={ImageBar2} />
       <GetInvolved />
     </div>
   );

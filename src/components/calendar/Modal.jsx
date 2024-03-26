@@ -1,4 +1,5 @@
 import { AiOutlinePlus } from "react-icons/ai";
+import reactHtmlParser from "html-react-parser";
 
 const Modal = ({ event, setEvent }) => {
   return (
@@ -29,7 +30,7 @@ const Modal = ({ event, setEvent }) => {
         <p className="m-0 pl-2 text-white">{event.location}</p>
 
         <div className="md:text-lg text-sm p-2 text-white">
-          {event.description?.replace(event.description.split(" ")[0], "")}
+          {event.description ? reactHtmlParser(event.description) : " "}
         </div>
       </div>
     </div>

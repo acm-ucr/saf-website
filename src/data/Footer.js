@@ -8,21 +8,21 @@ import {
 export const links = [
   {
     icon: <FaInstagram />,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/ucrsaf",
   },
 
   {
     icon: <FaEnvelope />,
-    link: "https://www.google.com/",
+    link: "mailto:safucr@gmail.com",
   },
 
   {
     icon: <FaSquareFacebook />,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/UCRSAF?mibextid=LQQJ4d",
   },
 
   {
     icon: <FaLinkedinIn />,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/south-asian-federation/",
   },
 ];

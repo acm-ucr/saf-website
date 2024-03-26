@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Ripple from "../../../public/svg/ripple.svg";
 
-const SAFanimation = {
+const animation = {
   hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
@@ -14,15 +14,10 @@ const SAFanimation = {
   },
 };
 
-const transition = {
-  duration: 0.8,
-};
-
 const SAF = () => {
   return (
     <div className="flex flex-col relative overflow-clip w-full justify-center items-center py-5 bg-saf-red gap-3">
       <Image
-        src={Ripple}
         className="w-full absolute -left-[80%] translate-y-1/3 sm:w-1/2 md:w-1/3 lg:w-1/3 md:-left-[8%] lg:-left-[8%] z-3 "
         alt={"ripple asset svg"}
       />
@@ -39,22 +34,22 @@ const SAF = () => {
       />
 
       <motion.div
-        variants={SAFanimation}
-        transition={{ ...transition, delay: 0.2 }}
+        variants={animation}
+        transition={{ delay: 0.1 }}
         initial="hidden"
         whileInView="show"
       >
-        <p className=" text-white text-center sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold">
+        <p className=" text-white text-center sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold ">
           {" "}
           Who We Are
         </p>
       </motion.div>
-      <motion.p
-        variants={SAFanimation}
-        transition={{ ...transition, delay: 0.4 }}
+      <motion.div
+        variants={animation}
+        transition={{ delay: 0.3 }}
         initial="hidden"
         whileInView="show"
-        className=" text-white text-center sm:text-sm md:text-base lg:text-xl font-lora h-1/2 w-5/6"
+        className=" text-white text-center sm:text-sm md:text-base lg:text-xl font-lora h-1/2 w-5/6 mb-3"
       >
         {" "}
         SAF, at UC Riverside, is Riverside’s South Asian Club. We aim to serve
@@ -64,10 +59,10 @@ const SAF = () => {
         South Asia. We are also socially and culturally oriented, striving to
         have the South Asian student population celebrate culture through
         festivals and inclusive religious events.
-      </motion.p>
+      </motion.div>
       <motion.div
-        variants={SAFanimation}
-        transition={{ delay: 0.7 }}
+        variants={animation}
+        transition={{ delay: 0.4 }}
         initial="hidden"
         whileInView="show"
       >

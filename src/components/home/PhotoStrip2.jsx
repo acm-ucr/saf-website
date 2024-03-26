@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const animation = {
-  hidden: { opacity: 1, x: 200 },
+  hidden: { opacity: 1, x: -200 },
   show: {
     opacity: 1,
     x: 0,

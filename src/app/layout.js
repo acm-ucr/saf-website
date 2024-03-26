@@ -10,12 +10,12 @@ import { Libre_Bodoni } from "next/font/google";
 const lora = Lora({
   subsets: ["latin"],
   display: "swap",
-  varible: "--font-lora",
+  variable: "--font-lora",
 });
 const libre = Libre_Bodoni({
   subsets: ["latin"],
   display: "swap",
-  varible: "--font-libre",
+  variable: "--font-libre",
 });
 
 export const metadata = {
@@ -25,8 +25,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${lora.variable} ${libre.variable}`}>
-      <body>
+    <html lang="en">
+      <body className={`${lora.variable} ${libre.variable}`}>
         <Navigation />
         <div className="w-full flex flex-col bg-saf-beige-100 items-center justify-center">
           {children}

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { events } from "@/data/WeeklyEvents.js";
+import { events } from "@/data/AwarenessWeek.js";
 import Image from "next/image";
 import Ripple from "../../../public/svg/ripple.svg";
 import WhiteMandala from "../../../public/svg/white-mandala.svg";
@@ -29,12 +29,12 @@ const Week = () => {
       />
 
       <div className="w-[90%] py-10">
-        <p className="text-center text-xl">SAF @ UCR presents</p>
-        <p className="font-bold py-4 sm:py-5 text-center text-2xl md:text-4xl">
+        <p className="text-center text-xl font-lora">SAF @ UCR presents</p>
+        <p className="font-bold font-libre py-4 sm:py-5 text-center text-2xl md:text-4xl">
           South Asian Awareness Week
         </p>
         <div className="mr-[5%] flex flex-row justify-center items-center gap-[12%]">
-          <div alt="event-numerical-day" className="flex flex-col">
+          <div alt="event-numerical-day" className="flex flex-col font-libre">
             {events.map((events, index) => (
               <motion.div
                 variants={slidedown}
@@ -47,7 +47,7 @@ const Week = () => {
               </motion.div>
             ))}
           </div>
-          <div alt="event-title" className="flex flex-col">
+          <div alt="event-title" className="flex flex-col font-lora">
             {events.map((events, index) => (
               <motion.div
                 variants={slidedown}
