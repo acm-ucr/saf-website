@@ -3,7 +3,7 @@ import Board from "./Board.jsx";
 
 const Boards = () => {
   return (
-    <div className="grid md:grid-cols-3 md:gap-10 gap-3 grid-cols-2 pb-10">
+    <div className="grid md:grid-cols-3 2xl:grid-cols-4 md:gap-10 gap-3 grid-cols-2 pb-10">
       {board.map((BOARD, index) => (
         <Board
           position={BOARD.position}

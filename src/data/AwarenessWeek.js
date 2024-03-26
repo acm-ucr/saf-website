@@ -6,12 +6,12 @@ export const events = [
   },
   {
     id: 2,
-    description: "ch20 Boba Social",
+    description: "Cha20 Boba Social",
     day: "23",
   },
   {
     id: 3,
-    description: "chai talk : Stigma Against the LGBTQ+ in SA Community",
+    description: "Chai talk : Stigma Against the LGBTQ+ in SA Community",
     day: "24",
   },
   {
