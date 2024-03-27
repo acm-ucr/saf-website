@@ -6,7 +6,7 @@ import banquet from "../../../public/images/banquet.webp";
 
 const page = () => {
   return (
-    <div className="w-full overflow-clip flex flex-col justify-center items-center gap-10">
+    <div className="w-full overflow-clip flex flex-col justify-center items-center gap-10 ">
       <Title text="Banquet" />
       <Description
         title={"What is Banquet?"}
@@ -14,7 +14,7 @@ const page = () => {
           "The South Asian Federation organization at the University of California, Riverside organizes a Banquet annually. This event is an opportunity to celebrate the beautiful South Asian culture and to enjoy South Asian food and music along with several different events!"
         }
       />
-      <Image src={banquet} className="md:w-1/2 w-5/6 mb-10" alt="banquet" />
+      <Image src={banquet} className="md:w-1/2 w-5/6 mb-10 " alt="banquet" />
     </div>
   );
 };

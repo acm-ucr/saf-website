@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const animation = {
-  hidden: { opacity: 1, x: -100 },
+  hidden: { opacity: 1, x: -200 },
   show: {
     opacity: 1,
     x: 0,
@@ -23,7 +23,7 @@ const PhotoStrip = ({ imageBar }) => {
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
     >
-      <Image src={imageBar} alt="pictures" layout="1/2" objectFit="1/2" />
+      <Image src={imageBar} alt="pictures" />
     </motion.div>
   );
 };

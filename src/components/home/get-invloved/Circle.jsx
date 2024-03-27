@@ -15,7 +15,7 @@ const Circle = ({ text, link, icon, delay }) => {
   };
 
   return (
-    <Link href={link} className="no-underline">
+    <Link href={link} target="_blank" className="no-underline">
       <motion.div
         variants={slidedownanimation}
         transition={{ duration: 0.4, delay: delay }}

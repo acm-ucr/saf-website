@@ -30,7 +30,11 @@ const Landing = () => {
         alt="saf flower"
         className="hidden xl:block w-1/3 animate-fade-right duration-1000 ease-in-out"
       />
-      <Image src={Flowermobile} alt="saf flower" className="w-1/2 xl:hidden" />
+      <Image
+        src={Flowermobile}
+        alt="saf flower"
+        className="w-1/2 xl:hidden animate-fade-right duration-1000 ease-in-out opacity-50"
+      />
       <div className="flex flex-row justify-end md:w-2/3 absolute md:relative">
         <Image
           src={Ripplel}

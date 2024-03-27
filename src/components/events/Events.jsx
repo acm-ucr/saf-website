@@ -76,16 +76,26 @@ const Events = ({ button = true }) => {
               if (event.allDay) {
                 formattedString = "All Day";
               } else {
-                const hours =
+                const startHours =
                   event.start.getHours() > 12
                     ? event.start.getHours() - 12
                     : event.start.getHours();
-                const minutes = event.start
+                const startMinutes = event.start
                   .getMinutes()
                   .toString()
                   .padStart(2, "0");
-                const period = event.start.getHours() >= 12 ? "PM" : "AM";
-                formattedString = `${hours}:${minutes} ${period}`;
+                const startPeriod = event.start.getHours() >= 12 ? "PM" : "AM";
+
+                const endHours =
+                  event.end.getHours() > 12
+                    ? event.end.getHours() - 12
+                    : event.end.getHours();
+                const endMinutes = event.end
+                  .getMinutes()
+                  .toString()
+                  .padStart(2, "0");
+                const endPeriod = event.end.getHours() >= 12 ? "PM" : "AM";
+                formattedString = `${startHours}:${startMinutes} ${startPeriod} - ${endHours}:${endMinutes} ${endPeriod}`;
               }
 
               return (
@@ -95,12 +105,11 @@ const Events = ({ button = true }) => {
                     .toLocaleString("default", { month: "short" })
                     .toUpperCase()}
                   day={event.start.getDate()}
-                  start={formattedString}
+                  time={formattedString}
                   summary={event.summary}
                   location={event.location}
                   link={event.link}
                   description={event.description}
-                  color={event.color}
                 />
               );
             })
