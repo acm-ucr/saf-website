@@ -5,7 +5,7 @@ import Link from "next/link";
 const NotFound = () => {
   return (
     <div className="flex flex-col w-full justify-between items-center min-h-screen">
-      <Image src={TitleAsset} alt="Title Svg" className="w-4/5 transform" />
+      <Image src={TitleAsset} alt="Title Svg" className="w-4/5 " />
       <div className="flex items-center flex-col gap-2 w-full">
         <div className="text-center text-8xl text-saf-red font-bold">404</div>
         <div className="text-center text-3xl text-saf-brown font-libre font-bold mb-3">

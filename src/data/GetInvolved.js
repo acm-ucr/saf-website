@@ -5,6 +5,7 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
+import { FaMailchimp } from "react-icons/fa";
 
 export const links = [
   {
@@ -18,7 +19,6 @@ export const links = [
     icon: <RiInstagramFill />,
     link: "https://www.instagram.com/ucrsaf/?hl=en",
   },
-
   {
     text: "Facebook",
     icon: <FaSquareFacebook />,
@@ -28,6 +28,11 @@ export const links = [
     text: "Email",
     icon: <FaEnvelope />,
     link: "mailto:safucr@gmail.com",
+  },
+  {
+    text: "Mailchimp",
+    icon: <FaMailchimp />,
+    link: "https://forms.gle/1TCrZxdaTAZJWV34A",
   },
   {
     text: "Youtube",

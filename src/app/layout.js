@@ -26,9 +26,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lora.variable} ${libre.variable}`}>
+      <body
+        className={`${lora.variable} ${libre.variable} flex flex-col bg-saf-beige-100 justify-between min-h-screen`}
+      >
         <Navigation />
-        <div className="w-full flex flex-col bg-saf-beige-100 items-center justify-center">
+        <div className="w-full flex flex-col bg-saf-beige-100 items-center justify-center ">
           {children}
         </div>
         <Footer />

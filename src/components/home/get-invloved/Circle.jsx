@@ -8,10 +8,11 @@ const Circle = ({ text, link, icon }) => {
   return (
     <Col
       xs={4}
-      lg={2}
+      lg={3}
+      xl={2}
       className="flex flex-col items-center justify-center justify-self-center self-start"
     >
-      <Link href={link} className="no-underline">
+      <Link href={link} target="_blank" className="no-underline">
         <div className="flex flex-col items-center ">
           <div className="relative group">
             <Image

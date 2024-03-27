@@ -20,7 +20,7 @@ const Board = ({ position, name, image }) => {
       whileInView="show"
       className="flex flex-col items-center group font-bold font-libre text-sm md:text-2xl 2xl:text-3xl"
     >
-      <div className=" flex items-center justify-center relative w-36 md:w-[325px] 2xl:w-[400px] aspect-square ">
+      <div className="flex items-center justify-center relative w-36 md:w-[325px] 2xl:w-[400px] aspect-square">
         <Image
           src={mandala}
           alt="Mandala"

@@ -54,7 +54,7 @@ const WhyJoin = () => {
             initial="hidden"
             whileInView="show"
           >
-            <div
+            <motion.div
               variants={animationY}
               transition={{ delay: 0.1 }}
               initial="hidden"
@@ -64,7 +64,7 @@ const WhyJoin = () => {
               <li className="whitespace-nowrap mt-3 font-libre leading-10 sm:text-xl">
                 Cultural Appreciation
               </li>
-            </div>
+            </motion.div>
             <motion.div
               variants={animationY}
               transition={{ delay: 0.2 }}

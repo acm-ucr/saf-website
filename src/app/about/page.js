@@ -1,7 +1,17 @@
+"use client";
 import React from "react";
 import Title from "@/components/Title";
 import Description from "@/components/Description";
 import Photo from "@/components/Photo";
+import { motion } from "framer-motion";
+
+const animationY = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 const page = () => {
   return (
@@ -24,18 +34,24 @@ const page = () => {
         }
       />
 
-      <div className="hidden md:flex flex-col w-5/6 -mt-4">
-        <p className="text-xs sm:text-xl">
+      <motion.div
+        variants={animationY}
+        transition={{ delay: 0.5 }}
+        initial="hidden"
+        whileInView="show"
+        className="flex flex-col w-5/6 -mt-4 gap-10"
+      >
+        <div className="text-xs sm:text-xl font-lora">
           {
             "SAF hopes to have a South Asian director in Asian Pacific Student Programs and hopes to one day have a South Asian Costa Hall center at UCR. The purpose of these two goals is to provide access and resources for South Asian students. SAF is a politically oriented student organization with the goal of raising awareness of the diaspora experience and various social injustices that have occurred in South Asia to the overall UC Riverside campus. "
           }
-        </p>
-        <p className="text-xs sm:text-xl mb-10">
+        </div>
+        <div className="text-xs sm:text-xl mb-10 font-lora">
           {
             "In addition, SAF is a social and cultural organization that strives to have the South Asian student population celebrate culture through festival inclusive religious events. It is important to have this organization on campus in order to represent the South Asian population at UCR."
           }
-        </p>
-      </div>
+        </div>
+      </motion.div>
     </div>
   );
 };

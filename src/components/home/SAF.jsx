@@ -62,7 +62,7 @@ const SAF = () => {
       </motion.div>
       <motion.div
         variants={animation}
-        transition={{ delay: 0.5 }}
+        transition={{ delay: 0.4 }}
         initial="hidden"
         whileInView="show"
       >

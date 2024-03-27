@@ -1,4 +1,5 @@
 import { AiOutlinePlus } from "react-icons/ai";
+import reactHtmlParser from "html-react-parser";
 
 const Modal = ({ event, setEvent }) => {
   return (
@@ -13,11 +14,17 @@ const Modal = ({ event, setEvent }) => {
         </p>
 
         <div className="absolute right-2 md:py-3 px-12 md:px-12 text-lg md:text-2xl text-white">
-          {!event.allDay &&
-            new Date(event.start).toLocaleTimeString(navigator.language, {
-              hour: "2-digit",
-              minute: "2-digit",
-            })}
+          {event.allDay
+            ? "All Day"
+            : new Date(event.start).toLocaleTimeString(navigator.language, {
+                hour: "2-digit",
+                minute: "2-digit",
+              }) +
+              " - " +
+              new Date(event.end).toLocaleTimeString(navigator.language, {
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
         </div>
 
         <AiOutlinePlus
@@ -29,7 +36,7 @@ const Modal = ({ event, setEvent }) => {
         <p className="m-0 pl-2 text-white">{event.location}</p>
 
         <div className="md:text-lg text-sm p-2 text-white">
-          {event.description?.replace(event.description.split(" ")[0], "")}
+          {event.description ? reactHtmlParser(event.description) : " "}
         </div>
       </div>
     </div>
