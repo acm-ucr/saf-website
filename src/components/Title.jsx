@@ -26,6 +26,7 @@ const Title = ({ text }) => {
           transition={{ ...transition }}
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true, amount: 0.5 }}
         >
           {text}
         </motion.div>
