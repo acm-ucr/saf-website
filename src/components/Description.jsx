@@ -47,8 +47,12 @@ const Description = ({ title, text }) => {
           </motion.div>
         </div>
         <motion.div
+          whileHover={{
+            scale: 1.1,
+            textShadow: "0px 0px 4px rgb(265,255,255)",
+          }}
           variants={animationY}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.1, damping: 50 }}
           initial="hidden"
           whileInView="show"
         >
