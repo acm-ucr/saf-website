@@ -24,12 +24,12 @@ const Board = ({ position, name, image }) => {
         <Image
           src={mandala}
           alt="Mandala"
-          className="opacity-20 group-hover:animate-spin-slow lg:w-full md:w-10/12"
+          className="opacity-20  group-hover:animate-spin-slow lg:w-full md:w-9/12 w-full"
         />
         <Image
           src={image}
           alt="SAF Board Member"
-          className="absolute lg:w-2/3 md:w-3/5 aspect-square rounded-full object-cover"
+          className="absolute  lg:w-2/3 md:w-1/2 w-2/3 aspect-square rounded-full object-cover"
         />
       </div>
       <p className="text-saf-red -mt-3 md:-mt-10 mb-0 max-w-36 md:max-w-none text-center">
