@@ -5,7 +5,7 @@ import TitleAsset from "../../public/svg/title.svg";
 import { motion } from "framer-motion";
 
 const slidedownanimation = {
-  hidden: { opacity: 0, y: -50 },
+  hidden: { opacity: 0, y: -10 },
   show: {
     opacity: 1,
     y: 0,
@@ -18,26 +18,20 @@ const transition = {
 
 const Title = ({ text }) => {
   return (
-    <motion.div
-      className="flex flex-col w-[140%] md:w-3/4 relative"
-      variants={slidedownanimation}
-      transition={{ ...transition }}
-      initial="hidden"
-      whileInView="show"
-    >
+    <div className="flex flex-col w-[140%] md:w-3/4 relative">
       <Image src={TitleAsset} alt="Title Svg" className="w-full" />
       <div className="w-full bottom-6 md:bottom-14 absolute text-center p-2 text-saf-red text-2xl md:text-4xl font-bold font-libre">
-        {/* <motion.div
+        <motion.div
           variants={slidedownanimation}
           transition={{ ...transition }}
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true, amount: 0.5 }}
         >
           {text}
-        </motion.div> */}
-        {text}
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
