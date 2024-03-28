@@ -21,6 +21,7 @@ const Circle = ({ text, link, icon, delay }) => {
         transition={{ duration: 0.4, delay: delay }}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true, amount: 0.5 }}
         className="flex flex-col items-center"
       >
         <div className="relative group">

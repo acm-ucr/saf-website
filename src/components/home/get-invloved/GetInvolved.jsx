@@ -8,7 +8,7 @@ const GetInvolved = () => {
       <p className="font-libre font-bold text-xl md:text-4xl mb-6 md:mb-14">
         Get Involved
       </p>
-      <div className="grid md:flex md:justify-evenly md:w-full grid-cols-3 gap-3 px-5">
+      <div className="grid grid-cols-3 md:!gap-10 !gap-3 px-5">
         {links &&
           links.map((linkData, index) => (
             <Circle

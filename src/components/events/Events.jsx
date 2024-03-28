@@ -114,7 +114,7 @@ const Events = ({ button = true }) => {
               );
             })
         ) : (
-          <p className="text-lg w-full text-center font-bold text-black mt-5">
+          <p className="text-lg w-full text-center font-bold text-black mt-5 font-lora">
             no upcoming events
           </p>
         )}
