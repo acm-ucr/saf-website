@@ -48,7 +48,7 @@ const Description = ({ title, text }) => {
         </div>
         <motion.div
           variants={animationY}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.1, damping: 50 }}
           initial="hidden"
           whileInView="show"
         >
