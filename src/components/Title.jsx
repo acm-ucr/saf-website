@@ -5,7 +5,7 @@ import TitleAsset from "../../public/svg/title.svg";
 import { motion } from "framer-motion";
 
 const slidedownanimation = {
-  hidden: { opacity: 1, y: -50 },
+  hidden: { opacity: 0, y: -50 },
   show: {
     opacity: 1,
     y: 0,
