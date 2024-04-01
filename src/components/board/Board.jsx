@@ -20,16 +20,16 @@ const Board = ({ position, name, image }) => {
       whileInView="show"
       className="flex flex-col items-center group font-bold font-libre text-sm md:text-2xl 2xl:text-3xl"
     >
-      <div className="flex items-center justify-center relative w-36 md:w-[325px] 2xl:w-[400px] aspect-square">
+      <div className="flex items-center justify-center relative w-36 md:w-full lg:w-[325px] 2xl:w-[400px] aspect-square">
         <Image
           src={mandala}
           alt="Mandala"
-          className="opacity-20 group-hover:animate-spin-slow w-full"
+          className="opacity-20 group-hover:animate-spin-slow 2xl:w-full lg:w-5/6 md:w-9/12 w-full"
         />
         <Image
           src={image}
           alt="SAF Board Member"
-          className="absolute w-2/3 aspect-square rounded-full object-cover"
+          className="absolute 2xl:w-2/3 lg:w-3/5 md:w-1/2 w-2/3 aspect-square rounded-full object-cover"
         />
       </div>
       <p className="text-saf-red -mt-3 md:-mt-10 mb-0 max-w-36 md:max-w-none text-center">
