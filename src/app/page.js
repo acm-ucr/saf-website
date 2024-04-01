@@ -1,6 +1,6 @@
 import Landing from "@/components/home/Landing";
 import SAF from "@/components/home/SAF";
-import PhotoStrip from "@/components/home/PhotoStrip";
+import PhotoStrip1 from "@/components/home/PhotoStrip1";
 import PhotoStrip2 from "@/components/home/PhotoStrip2";
 import WhyJoin from "@/components/home/WhyJoin";
 import ImageBar1 from "../../public/images/ImageBar1.webp";
@@ -12,7 +12,7 @@ const Home = () => {
     <div className="w-full overflow-clip flex flex-col justify-center items-center">
       <Landing />
       <SAF />
-      <PhotoStrip imageBar={ImageBar1} />
+      <PhotoStrip1 imageBar={ImageBar1} />
       <WhyJoin />
       <PhotoStrip2 imageBar={ImageBar2} />
       <GetInvolved />

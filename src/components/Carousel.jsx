@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const Carousel = ({ data }) => {
-  console.log(data);
   return (
     <div className="relative flex overflow-hidden">
       <div className="flex animate-marquee">
