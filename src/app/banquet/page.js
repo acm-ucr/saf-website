@@ -3,6 +3,8 @@ import Title from "@/components/Title";
 import Description from "@/components/Description";
 import Image from "next/image";
 import banquet from "../../../public/images/banquet.webp";
+import Carousel from "@/components/Carousel";
+import { carousel } from "@/data/BanquetPictures";
 
 const page = () => {
   return (
@@ -14,6 +16,8 @@ const page = () => {
           "The South Asian Federation organization at the University of California, Riverside organizes a Banquet annually. This event is an opportunity to celebrate the beautiful South Asian culture and to enjoy South Asian food and music along with several different events!"
         }
       />
+      <Carousel data={carousel} />
+      <Description title={"Meet the Banquet Board"} />
       <Image src={banquet} className="md:w-1/2 w-5/6 mb-10 " alt="banquet" />
     </div>
   );
