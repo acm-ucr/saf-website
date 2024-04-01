@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { carousel } from "@/data/Carousel";
 
-const Carousel = () => {
+const Carousel = ({ data }) => {
+  console.log(data);
   return (
     <div className="relative flex overflow-hidden">
       <div className="flex animate-marquee">
-        {carousel.map((image, index) => (
+        {data.map((image, index) => (
           <div
             key={index}
             className="flex-grow items-stretch w-1/4 mx-2 sm:w-2/4 sm:mx-4"
@@ -19,7 +19,7 @@ const Carousel = () => {
         ))}
       </div>
       <div className="flex absolute animate-marquee-continuation">
-        {carousel.map((image, index) => (
+        {data.map((image, index) => (
           <div
             key={index}
             className="flex-grow items-stretch w-1/4 mx-2 sm:w-2/4 sm:mx-4"
