@@ -17,7 +17,7 @@ const Carousel = ({ data }) => {
           </div>
         ))}
       </div>
-      <div className="flex absolute animate-marquee-continuation">
+      <div className="flex absolute animate-marquee-continuation left-0 w-fit">
         {data.map((image, index) => (
           <div
             key={index}
