@@ -16,7 +16,7 @@ export const events = [
   },
   {
     id: 4,
-    description: "Bollywood/Hip-hop Dance Workshop with Rayan Abeyratne",
+    description: "Bollywood/Hip-hop Dance Workshop with Ryan Abeyratne",
     day: "25",
   },
   {
