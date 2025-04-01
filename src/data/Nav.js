@@ -5,26 +5,26 @@ export const items = [
   },
   {
     name: "ABOUT",
-    link: "about",
+    link: "/about",
   },
   {
     name: "BOARD",
-    link: "board",
+    link: "/board",
   },
   {
     name: "EVENTS",
-    link: "events",
+    link: "/events",
   },
   {
     name: "CULTURE SHOW",
-    link: "culture-show",
+    link: "/culture-show",
   },
   {
     name: "SOUTH ASIAN AWARENESS WEEK",
-    link: "awareness-week",
+    link: "/awareness-week",
   },
   {
     name: "BANQUET",
-    link: "banquet",
+    link: "/banquet",
   },
 ];
