@@ -1,7 +1,7 @@
 "use client";
 
 import { items } from "@/data/Nav";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
@@ -10,7 +10,7 @@ import Image from "next/image";
 import WhiteLogo from "../../public/svg/white-logo.svg";
 
 const Navigation = () => {
-  const [selected, setSelected] = useState("");
+  const pathName = usePathname();
   return (
     <Navbar
       collapseOnSelect
@@ -20,11 +20,8 @@ const Navigation = () => {
     >
       <Navbar.Brand className="p-0">
         <Link
-          as={Link}
-          eventkey="1"
-          className="p-0 no-underline flex items-center gap-2"
+          className="hover:opacity-60 duration-300 w-1/5 2xl:w-1/4"
           href="/"
-          onClick={() => setSelected("")}
         >
           <Image src={WhiteLogo} className=" w-16 my-2 ml-1" alt="saf-logo" />
         </Link>
@@ -37,19 +34,16 @@ const Navigation = () => {
       </Navbar.Toggle>
       <Navbar.Collapse className="items-center lg:justify-end justify-center flex">
         <Nav className="mb-2 w-12/12 no-underline flex text-xl items-center left-0 lg:ml-auto text-center">
-          {items.map((item, index) => (
+          {items.map(({ name, link }, index) => (
             <Nav.Link
               as={Link}
               key={index}
-              href={item.link}
-              onClick={() => {
-                setSelected(item.name);
-              }}
+              href={link}
               className={`hover:cursor-pointer mb-0 py-1 px-4 !text-saf-beige-100 text-xl whitespace-nowrap hover:!text-saf-beige-200 duration-300 ${
-                selected === item.name ? "underline" : "no-underline"
+                pathName === link ? "underline" : "no-underline"
               }`}
             >
-              {item.name}
+              {name}
             </Nav.Link>
           ))}
         </Nav>
